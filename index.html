@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <title>Destination Book</title>
+    </head>
+
+<body>
+    <h1>Destination Book</h1>
+    <h2>Tell us where you have been!</h2>
+    <form id="new-destination">
+        <label for ="new-destination-name">place</label>
+        <input type="text" id="new-destination-name" name="new-destination-name">
+
+        <label for ="new-date-name">date</label>
+        <input type="text" id="new-date-name" name="new-date-name">
+
+        <label for ="new-experience-name">experience</label>
+        <input type="text" id="new-experience-name" name="new-experience-name">
+
+        <button type="submit">Add</button>
+        </form>
+        <div id="destination">
+        </div>
+
+        <div id="destination-details" class="hidden">
+            <p>location: <span id= "location"></span></p>
+            <p> date: <span id= "date"></span></p>
+            <p> experience: <span id= "experience" ></span></p>
+        </div>
+        
+        
+
+
+
+    
+</body>
+</html>
