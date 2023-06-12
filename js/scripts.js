@@ -7,7 +7,7 @@ function handleFormSubmission(event) {
     let inputtedDate = document.querySelector("input#new-date-name").value;
     let inputtedExperience = document.querySelector("input#new-experience-name").value;
     let newPlace = new Place(inputtedPlace, inputtedDate, inputtedExperience);
-    
+
     destinationBook.addPlace(newPlace);
     console.log(destinationBook.places);
 
@@ -48,10 +48,12 @@ Place.prototype.allInfo = function(){
 };
 
 DestinationBook.prototype.addPlace = function(place){
-    this.places[place.id] = place;
     place.id = this.assignId();
+    this.places[place.id] = place;
+
 
 };
+
 
 // let place1 = new Place("Afognak", "2019", "Kitoi Bay Hatchery Seasonal Job");
 // let place2 = new Place("Marseille","2022", "Proposed to off the tip of Il Dou Froui");
